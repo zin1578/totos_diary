@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <item
+        android:drawable="@drawable/toto_sad1"
+        android:duration="150" />
+
+    <item
+        android:drawable="@drawable/toto_sad2"
+        android:duration="150" />
+
+    <item
+        android:drawable="@drawable/toto_sad3"
+        android:duration="150" />
+
+    <item
+        android:drawable="@drawable/toto_sad4"
+        android:duration="150" />
+
+    <item
+        android:drawable="@drawable/toto_sad5"
+        android:duration="150" />
+
+    <item
+        android:drawable="@drawable/toto_sad6"
+        android:duration="150" />
+
+</animation-list>

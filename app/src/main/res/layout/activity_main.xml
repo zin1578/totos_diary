@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView_likes"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:text="호감도:" />
+
+            <TextView
+                android:id="@+id/textViewLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="112dp"
+                android:layout_height="41dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageView_fish"
+                android:layout_width="26dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:visibility="visible"
+                app:srcCompat="@drawable/fish_icon"
+                tools:srcCompat="@drawable/fish_icon" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="5dp"
+                android:layout_height="23dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/x_icon" />
+
+            <TextView
+                android:id="@+id/textView_fishcount"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="401dp"
+        android:layout_height="78dp"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/button_diary"
+            android:layout_width="74dp"
+            android:layout_height="71dp"
+            android:layout_gravity="right"
+            android:background="@drawable/toto_diary2"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:onClick="onButtonDiaryClicked"
+            style="?android:attr/borderlessButtonStyle"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="833dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="400dp"
+            android:layout_height="742dp"
+            app:srcCompat="@drawable/toto_bg" />
+
+        <ImageView
+            android:id="@+id/totoImage"
+            android:layout_width="381dp"
+            android:layout_height="368dp"
+            android:layout_gravity="center|right"
+            android:background="@drawable/normal_animation"
+            android:clickable="true"
+            android:gravity="center|right" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_gravity="top">
+
+        <TextView
+            android:id="@+id/totoText"
+            android:layout_width="249dp"
+            android:layout_height="57dp"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="261dp"
+            android:layout_height="314dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/imageButton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:background="@drawable/toto_dialogfill"
+                android:fontFamily="@font/notosans_light"
+                android:textSize="15sp" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:id="@+id/sttStart"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="130dp"
+            android:layout_height="46dp"
+            android:layout_gravity="top|center"
+            android:background="@drawable/toto_speak2_2" />
+
+        <TextView
+            android:id="@+id/sttResult"
+            android:layout_width="170dp"
+            android:layout_height="63dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="나의 말주머니" />
+
+    </FrameLayout>
+
+</FrameLayout>
+
